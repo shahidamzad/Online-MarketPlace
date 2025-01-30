@@ -15,7 +15,13 @@ const Navbar = () => {
             <Link to="/" className="text-xl font-bold text-gray-800">
               ServiceApp
             </Link>
-            <div className="hidden md:flex space-x-4 ml-10">
+           
+          </div>
+
+          {/* Right side: Auth Links */}
+          
+          <div className="flex items-center">
+          <div className="hidden md:flex space-x-4 ml-10">
               <Link
                 to="/"
                 className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
@@ -37,10 +43,6 @@ const Navbar = () => {
                 </Link>
               )}
             </div>
-          </div>
-
-          {/* Right side: Auth Links */}
-          <div className="flex items-center">
             {user ? (
               <button
                 onClick={logout}
